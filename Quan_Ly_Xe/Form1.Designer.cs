@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.txtWeight = new System.Windows.Forms.TextBox();
             this.btnStatistical = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvTicketMain = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.labelTime = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -63,7 +63,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTicketMain)).BeginInit();
             this.SuspendLayout();
             // 
             // txtWeight
@@ -92,13 +92,13 @@
             this.btnStatistical.UseVisualStyleBackColor = true;
             this.btnStatistical.Click += new System.EventHandler(this.btnStatistical_Click);
             // 
-            // dataGridView1
+            // dgvTicketMain
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(33, 436);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1092, 272);
-            this.dataGridView1.TabIndex = 1000;
+            this.dgvTicketMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTicketMain.Location = new System.Drawing.Point(33, 436);
+            this.dgvTicketMain.Name = "dgvTicketMain";
+            this.dgvTicketMain.Size = new System.Drawing.Size(1092, 272);
+            this.dgvTicketMain.TabIndex = 1000;
             // 
             // label5
             // 
@@ -147,7 +147,7 @@
             // txtSeller
             // 
             this.txtSeller.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSeller.Location = new System.Drawing.Point(126, 127);
+            this.txtSeller.Location = new System.Drawing.Point(126, 134);
             this.txtSeller.Name = "txtSeller";
             this.txtSeller.Size = new System.Drawing.Size(248, 26);
             this.txtSeller.TabIndex = 2;
@@ -156,7 +156,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 131);
+            this.label2.Location = new System.Drawing.Point(30, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 18);
             this.label2.TabIndex = 101;
@@ -165,7 +165,7 @@
             // txtBuyer
             // 
             this.txtBuyer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuyer.Location = new System.Drawing.Point(126, 170);
+            this.txtBuyer.Location = new System.Drawing.Point(126, 185);
             this.txtBuyer.Name = "txtBuyer";
             this.txtBuyer.Size = new System.Drawing.Size(248, 26);
             this.txtBuyer.TabIndex = 3;
@@ -174,7 +174,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(29, 174);
+            this.label3.Location = new System.Drawing.Point(29, 189);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 18);
             this.label3.TabIndex = 101;
@@ -250,6 +250,7 @@
             this.btnDelete.TabIndex = 12;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnExit
             // 
@@ -265,7 +266,7 @@
             // txtItem
             // 
             this.txtItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtItem.Location = new System.Drawing.Point(126, 218);
+            this.txtItem.Location = new System.Drawing.Point(126, 235);
             this.txtItem.Name = "txtItem";
             this.txtItem.Size = new System.Drawing.Size(248, 26);
             this.txtItem.TabIndex = 4;
@@ -274,7 +275,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 218);
+            this.label4.Location = new System.Drawing.Point(30, 235);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 18);
             this.label4.TabIndex = 10343;
@@ -433,13 +434,14 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelTime);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvTicketMain);
             this.Controls.Add(this.btnStatistical);
             this.Controls.Add(this.txtWeight);
             this.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "FormManagementCar";
             this.Text = "Quản Lý Cân Xe";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FormManagementCar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTicketMain)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -448,7 +450,7 @@
         #endregion
         private System.Windows.Forms.TextBox txtWeight;
         private System.Windows.Forms.Button btnStatistical;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvTicketMain;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.Timer timer1;
