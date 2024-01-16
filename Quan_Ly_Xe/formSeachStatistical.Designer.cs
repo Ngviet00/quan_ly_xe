@@ -61,15 +61,15 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.txtBuyer = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbFindByBuyer = new System.Windows.Forms.CheckBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.txtItem = new System.Windows.Forms.TextBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.cbFindByItem = new System.Windows.Forms.CheckBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.txtSeller = new System.Windows.Forms.TextBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.cbFindBySeller = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -357,12 +357,14 @@
             this.cbFindByLicensePlates.Size = new System.Drawing.Size(15, 14);
             this.cbFindByLicensePlates.TabIndex = 25;
             this.cbFindByLicensePlates.UseVisualStyleBackColor = true;
+            this.cbFindByLicensePlates.CheckedChanged += new System.EventHandler(this.cbFindByLicensePlates_CheckedChanged);
             // 
             // txtSearchLicensePlate
             // 
             this.txtSearchLicensePlate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchLicensePlate.Location = new System.Drawing.Point(621, 52);
             this.txtSearchLicensePlate.Name = "txtSearchLicensePlate";
+            this.txtSearchLicensePlate.ReadOnly = true;
             this.txtSearchLicensePlate.Size = new System.Drawing.Size(166, 24);
             this.txtSearchLicensePlate.TabIndex = 29;
             // 
@@ -407,17 +409,19 @@
             this.txtBuyer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuyer.Location = new System.Drawing.Point(621, 166);
             this.txtBuyer.Name = "txtBuyer";
+            this.txtBuyer.ReadOnly = true;
             this.txtBuyer.Size = new System.Drawing.Size(166, 24);
             this.txtBuyer.TabIndex = 36;
             // 
-            // checkBox1
+            // cbFindByBuyer
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(600, 169);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 35;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbFindByBuyer.AutoSize = true;
+            this.cbFindByBuyer.Location = new System.Drawing.Point(600, 169);
+            this.cbFindByBuyer.Name = "cbFindByBuyer";
+            this.cbFindByBuyer.Size = new System.Drawing.Size(15, 14);
+            this.cbFindByBuyer.TabIndex = 35;
+            this.cbFindByBuyer.UseVisualStyleBackColor = true;
+            this.cbFindByBuyer.CheckedChanged += new System.EventHandler(this.cbFindByBuyer_CheckedChanged);
             // 
             // label17
             // 
@@ -442,17 +446,19 @@
             this.txtItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtItem.Location = new System.Drawing.Point(621, 226);
             this.txtItem.Name = "txtItem";
+            this.txtItem.ReadOnly = true;
             this.txtItem.Size = new System.Drawing.Size(166, 24);
             this.txtItem.TabIndex = 40;
             // 
-            // checkBox2
+            // cbFindByItem
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(600, 229);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 39;
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cbFindByItem.AutoSize = true;
+            this.cbFindByItem.Location = new System.Drawing.Point(600, 229);
+            this.cbFindByItem.Name = "cbFindByItem";
+            this.cbFindByItem.Size = new System.Drawing.Size(15, 14);
+            this.cbFindByItem.TabIndex = 39;
+            this.cbFindByItem.UseVisualStyleBackColor = true;
+            this.cbFindByItem.CheckedChanged += new System.EventHandler(this.cbFindByItem_CheckedChanged);
             // 
             // label19
             // 
@@ -477,17 +483,19 @@
             this.txtSeller.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSeller.Location = new System.Drawing.Point(621, 107);
             this.txtSeller.Name = "txtSeller";
+            this.txtSeller.ReadOnly = true;
             this.txtSeller.Size = new System.Drawing.Size(166, 24);
             this.txtSeller.TabIndex = 44;
             // 
-            // checkBox3
+            // cbFindBySeller
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(600, 110);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(15, 14);
-            this.checkBox3.TabIndex = 43;
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cbFindBySeller.AutoSize = true;
+            this.cbFindBySeller.Location = new System.Drawing.Point(600, 110);
+            this.cbFindBySeller.Name = "cbFindBySeller";
+            this.cbFindBySeller.Size = new System.Drawing.Size(15, 14);
+            this.cbFindBySeller.TabIndex = 43;
+            this.cbFindBySeller.UseVisualStyleBackColor = true;
+            this.cbFindBySeller.CheckedChanged += new System.EventHandler(this.cbFindBySeller_CheckedChanged);
             // 
             // formSeachStatistical
             // 
@@ -498,15 +506,15 @@
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.txtSeller);
-            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.cbFindBySeller);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.txtItem);
-            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.cbFindByItem);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtBuyer);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.cbFindByBuyer);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txtSearchLicensePlate);
@@ -571,14 +579,14 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtBuyer;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cbFindByBuyer;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txtItem;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox cbFindByItem;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox txtSeller;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox cbFindBySeller;
     }
 }

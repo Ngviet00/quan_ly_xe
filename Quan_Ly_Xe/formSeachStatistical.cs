@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Quan_Ly_Xe
 {
@@ -83,6 +84,57 @@ namespace Quan_Ly_Xe
                     cbxYear2.Text = i.ToString();
                     cbxYear3.Text = i.ToString();
                 }
+            }
+        }
+
+        private void cbFindByLicensePlates_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbFindByLicensePlates.Checked)
+            {
+                txtSearchLicensePlate.ReadOnly = false;
+            } else
+            {
+                txtSearchLicensePlate.ReadOnly = true;
+                txtSearchLicensePlate.Text = string.Empty;
+            }
+        }
+
+        private void cbFindBySeller_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbFindBySeller.Checked)
+            {
+                txtSeller.ReadOnly = false;
+            }
+            else
+            {
+                txtSeller.ReadOnly = true;
+                txtSeller.Text = string.Empty;
+            }
+        }
+
+        private void cbFindByBuyer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbFindByBuyer.Checked)
+            {
+                txtBuyer.ReadOnly = false;
+            }
+            else
+            {
+                txtBuyer.ReadOnly = true;
+                txtBuyer.Text = string.Empty;
+            }
+        }
+
+        private void cbFindByItem_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbFindByItem.Checked)
+            {
+                txtItem.ReadOnly = false;
+            }
+            else
+            {
+                txtItem.ReadOnly = true;
+                txtItem.Text = string.Empty;
             }
         }
     }

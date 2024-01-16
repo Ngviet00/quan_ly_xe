@@ -58,37 +58,53 @@ namespace Quan_Ly_Xe
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            save();
-            refreshData();
+            if (validate())
+            {
+                //save
+
+                //refresh data
+                refreshData();
+            }
         }
 
-        private void save()
+        private bool validate()
         {
             if (string.IsNullOrEmpty(txtLicensePlates.Text))
             {
                 MessageBox.Show("Biển số xe không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtLicensePlates.Focus();
-            }
-            else if (string.IsNullOrEmpty(txtSeller.Text))
+                return false;
+            } 
+
+            if (string.IsNullOrEmpty(txtSeller.Text))
             {
                 MessageBox.Show("Người bán không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtSeller.Focus();
+                return false;
             }
-            else if (string.IsNullOrEmpty(txtBuyer.Text))
+
+            if (string.IsNullOrEmpty(txtBuyer.Text))
             {
                 MessageBox.Show("Người mua không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtBuyer.Focus();
+                return false;
             }
-            else if (string.IsNullOrEmpty(txtItem.Text))
+
+            if (string.IsNullOrEmpty(txtItem.Text))
             {
                 MessageBox.Show("Loại hàng không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtItem.Focus();
+                return false;
             }
-        }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
+            if (string.IsNullOrEmpty(txtTotalWeight.Text) && string.IsNullOrEmpty(txtTotalVehicle.Text))
+            {
+                MessageBox.Show("Trọng lượng tổng hoặc trọng lượng bì xe không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtItem.Focus();
+                return false;
+            }
 
+            return true;
         }
     }
 }
