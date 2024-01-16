@@ -66,24 +66,29 @@ namespace Quan_Ly_Xe
         {
             if (string.IsNullOrEmpty(txtLicensePlates.Text))
             {
-                MessageBox.Show("Biển số xe không được để trống!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Biển số xe không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtLicensePlates.Focus();
             }
             else if (string.IsNullOrEmpty(txtSeller.Text))
             {
-                MessageBox.Show("Người bán không được để trống!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Người bán không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtSeller.Focus();
             }
             else if (string.IsNullOrEmpty(txtBuyer.Text))
             {
-                MessageBox.Show("Người mua không được để trống!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Người mua không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtBuyer.Focus();
             }
             else if (string.IsNullOrEmpty(txtItem.Text))
             {
-                MessageBox.Show("Loại hàng không được để trống!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Loại hàng không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtItem.Focus();
             }
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

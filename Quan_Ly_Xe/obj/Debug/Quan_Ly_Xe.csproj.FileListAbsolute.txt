@@ -9,3 +9,14 @@ D:\Projects\Quan_Ly_Xe\Quan_Ly_Xe\obj\Debug\Quan_Ly_Xe.exe
 D:\Projects\Quan_Ly_Xe\Quan_Ly_Xe\obj\Debug\Quan_Ly_Xe.pdb
 D:\Projects\Quan_Ly_Xe\Quan_Ly_Xe\obj\Debug\Quan_Ly_Xe.FormManagementCar.resources
 D:\Projects\Quan_Ly_Xe\Quan_Ly_Xe\obj\Debug\Quan_Ly_Xe.formSeachStatistical.resources
+D:\quan_ly_xe\Quan_Ly_Xe\bin\Debug\Quan_Ly_Xe.exe.config
+D:\quan_ly_xe\Quan_Ly_Xe\bin\Debug\Quan_Ly_Xe.exe
+D:\quan_ly_xe\Quan_Ly_Xe\bin\Debug\Quan_Ly_Xe.pdb
+D:\quan_ly_xe\Quan_Ly_Xe\obj\Debug\Quan_Ly_Xe.csproj.AssemblyReference.cache
+D:\quan_ly_xe\Quan_Ly_Xe\obj\Debug\Quan_Ly_Xe.FormManagementCar.resources
+D:\quan_ly_xe\Quan_Ly_Xe\obj\Debug\Quan_Ly_Xe.formSeachStatistical.resources
+D:\quan_ly_xe\Quan_Ly_Xe\obj\Debug\Quan_Ly_Xe.Properties.Resources.resources
+D:\quan_ly_xe\Quan_Ly_Xe\obj\Debug\Quan_Ly_Xe.csproj.GenerateResource.cache
+D:\quan_ly_xe\Quan_Ly_Xe\obj\Debug\Quan_Ly_Xe.csproj.CoreCompileInputs.cache
+D:\quan_ly_xe\Quan_Ly_Xe\obj\Debug\Quan_Ly_Xe.exe
+D:\quan_ly_xe\Quan_Ly_Xe\obj\Debug\Quan_Ly_Xe.pdb
